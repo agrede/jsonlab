@@ -75,7 +75,7 @@ elseif(exist(fname,'file'))
            string = urlread(['file://',fullfile(pwd,fname)]);
        end
    end
-   if size(string, 2) == 1
+   if size(string, 2) == 1 % Transpose string if in column format
      string = string.';
    end
 else
